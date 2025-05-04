@@ -1,30 +1,31 @@
-body, html{
+body,
+html {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: #fffcef;
+  background: #131313cef;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-::selection{
+::selection {
   background: transparent;
   color: inherit;
 }
 
-::-moz-selection{
+::-moz-selection {
   background: transparent;
   color: inherit;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: #eee;
   width: 3px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #28282a;
 }
 
@@ -53,39 +54,42 @@ body, html{
   src: url('fonts/Kayak Sans Regular.otf');
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
   color: #283149;
 }
 
-p{
+p {
   font-family: kayak-r, sans-serif;
   color: #404b69;
 }
 
-ul{
+ul {
   list-style-type: none;
   padding: 0px;
 }
 
-a{
+a {
   text-decoration: none;
   font-family: kayak-b, sans-serif;
   color: #283149;
 }
 
-.white{
-  color: #fff;
+.white {
+  color: #131313;
 }
 
-.black{
+.black {
   color: #283149;
 }
 
 /*STYLESHEETS*/
 
-.header{
+.header {
   width: 80%;
   position: fixed;
   display: flex;
@@ -93,22 +97,22 @@ a{
   top: 10%;
   left: 10%;
   z-index: 10;
-  box-shadow: inset 480px 0 #fffcef;
+  box-shadow: inset 480px 0 #131313cef;
 }
 
-.header__logo{
+.header__logo {
   width: 38px;
   margin-right: 25px;
 }
 
-.header a{
+.header a {
   margin: 0 16px;
   letter-spacing: 1px;
   transition: 0.4s;
   box-shadow: inset 0px 0 #ccc;
 }
 
-.header__pgname{
+.header__pgname {
   position: absolute;
   right: 0;
   bottom: -12%;
@@ -116,26 +120,26 @@ a{
   font-family: kayak-b, sans-serif;
 }
 
-.header a:hover{
+.header a:hover {
   box-shadow: inset 30px 0 #bbb;
 }
 
 /*CONTENT*/
 
-.banner{
+.banner {
   width: 100%;
   height: 70%;
   position: relative;
   padding: 16% 10%;
 }
 
-.banner h1{
+.banner h1 {
   font-family: product, sans-serif;
   font-size: 17vh;
   color: #28282a;
 }
 
-.banner h2{
+.banner h2 {
   position: absolute;
   top: 48%;
   right: 12%;
@@ -145,13 +149,13 @@ a{
   letter-spacing: 15px;
 }
 
-.banner p{
+.banner p {
   line-height: 25px;
   margin-top: -10px;
   padding-left: 5px;
 }
 
-.banner img{
+.banner img {
   width: 38px;
   position: absolute;
   left: 50%;
@@ -159,69 +163,70 @@ a{
   transform: translate(-50%, 0);
 }
 
-.content{
+.content {
   padding: 10%;
 }
 
-.art{
+.art {
   width: 100%;
   height: 80vh;
   position: relative;
 }
 
-.art__interaction{
+.art__interaction {
   background: url("photos/inter.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.art__monitor{
+.art__monitor {
   background: url("photos/monitor.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.art__analyze{
+.art__analyze {
   background: url("photos/analyze.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.art__knowledge{
+.art__knowledge {
   background: url("photos/know.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.art__text{
+.art__text {
   display: flex;
   position: absolute;
   bottom: 5%;
   left: 5%;
 }
 
-.art__text h1{
+.art__text h1 {
   font-family: bebas, sans-serif;
   font-size: 8vh;
   padding-right: 5px;
   letter-spacing: 4px;
 }
 
-.art__text--info{
+.art__text--info {
   height: 6vh;
   padding-left: 5px;
 }
 
-.art__text--info h3{
+.art__text--info h3 {
   margin: 6px 0 -12px 0;
   font-family: kayak-b, sans-serif;
 }
 
-.art__text hr, hr{
+.art__text hr,
+hr {
   background: #28282a;
   width: 3px;
   height: 6.3vh;
@@ -229,17 +234,17 @@ a{
 
 }
 
-.para{
+.para {
   text-align: center;
   padding: 8%;
 }
 
-.para p{
+.para p {
   font-family: crete, sans-serif;
   font-size: 5vh;
 }
 
-.use-heading{
+.use-heading {
   font-size: 40vh;
   font-family: product, sans-serif;
   position: absolute;
@@ -249,11 +254,11 @@ a{
   opacity: 0.1;
 }
 
-.uses{
+.uses {
   width: 100%;
 }
 
-.uses h1{
+.uses h1 {
   font-family: bebas, sans-serif;
   text-align: center;
   font-size: 50px;
@@ -262,38 +267,38 @@ a{
   text-align: center;
 }
 
-.uses__text{
+.uses__text {
   padding: 0 12% 6% 18%;
 }
 
-.uses__text h2{
+.uses__text h2 {
   font-family: crete, sans-serif;
   font-size: 30px;
 }
 
-.uses__text--para{
+.uses__text--para {
   display: flex;
   align-items: flex-start;
   margin: auto;
 }
 
-.uses__text--para p{
+.uses__text--para p {
   line-height: 26px;
   font-size: 17px;
   width: 44%;
   word-wrap: break-word;
 }
 
-.uses__text--para p:nth-child(1){
+.uses__text--para p:nth-child(1) {
   margin-right: 4%;
 }
 
-.uses__text--para p:nth-child(2){
+.uses__text--para p:nth-child(2) {
   margin-left: 4%;
 }
 
 
-.nxt{
+.nxt {
   width: 100%;
   display: flex;
   align-items: center;
@@ -301,46 +306,47 @@ a{
   transition: 0.4s;
 }
 
-.nxt__interaction{
+.nxt__interaction {
   background: url("photos/inter.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.nxt__monitor{
+.nxt__monitor {
   background: url("photos/monitor.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.nxt__analyze{
+.nxt__analyze {
   background: url("photos/analyze.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.nxt__knowledge{
+.nxt__knowledge {
   background: url("photos/know.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
 }
 
-.nxt:hover{
+.nxt:hover {
   padding: 5% 37%;
   background-position: 0 10%;
 }
 
-.nxt h1, .nxt h2{
+.nxt h1,
+.nxt h2 {
   font-family: bebas, sans-serif;
   font-size: 8vh;
   letter-spacing: 5px;
 }
 
-.nxt hr{
+.nxt hr {
   width: 3px;
   height: 6.3vh;
   margin-top: 1px;
