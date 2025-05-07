@@ -58,7 +58,7 @@ nav>*,
     bottom: 0;
     width: 100vw;
     height: 100svh;
-    background: #b3b3b3;
+    background: rgb(204, 204, 204);
     z-index: 0;
 }
 
