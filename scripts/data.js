@@ -1,0 +1,80 @@
+export const awards = [
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+  {
+    name: "Independent of the year",
+    type: "Nominee",
+    project: "INNOVATE 2024",
+    label: "See Live",
+  },
+];

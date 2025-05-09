@@ -1,106 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Bold';
+    src: url('./fonts/montreal-bold.BIV8fYZS.woff2')
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('./fonts/montreal-regular.BnPzp14t.woff2')
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Bold";
 }
 
-a,
-p {
-    display: flex;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-family: "Space Mono";
-    font-size: 12px;
-    font-weight: 400;
+body {
+    background-color: #fff;
+    position: relative;
 }
 
-nav,
-footer {
+::-webkit-scrollbar {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    padding: 8px;
+}
+
+.footer div {
+    height: 90%;
+    background: #000;
+}
+
+img {
     position: absolute;
-    left: 0;
-    width: 100vw;
-    padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -1.1px;
+    line-height: 0.9;
+}
+
+p {
+    font-family: "Regular";
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: -.2px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 nav {
-    top: 0;
-}
-
-footer {
-    bottom: 0;
-    cursor: context-menu;
-}
-
-a:hover {
-    font-weight: 600 !important;
-}
-
-.links,
-.socials {
-    display: flex;
-    gap: 2em;
-}
-
-nav>*,
-.links a {
-    flex: 1;
-}
-
-.bg {
-    position: absolute;
-    bottom: 0;
+    z-index: 1000000;
     width: 100vw;
-    height: 100svh;
-    background: rgb(204, 204, 204);
-    z-index: 0;
-}
-
-.container {
-    position: relative;
-    width: 100vw;
-    height: 100svh;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.project-title-container {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    aspect-ratio: 16/9;
+    height: 6vh;
+    font-size: 34px;
+    display: flex;
+    letter-spacing: -.6px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: flex-end;
+    mix-blend-mode: difference;
+    padding: 8px;
 }
 
-#project-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
+nav a {
     text-decoration: none;
     color: #fff;
 }
 
-.project-title-mask {
-    position: relative;
-    width: 100%;
-    height: 16px;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    overflow: hidden;
+nav>a {
+    margin-right: 7pxem;
 }
 
-#project-title {
-    display: block;
-    position: relative;
-    transform: translateY(0px);
-    color: #fff;
-    text-align: center;
-    transition: transform 0.5 ease-in-out;
+.hero {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    height: 70vh;
 }
+
+.hero .left {
+    width: 60%;
+}
+
+.hero .right {
+    width: 40%;
+}
+
+.hero img {
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1000;
+    position: static;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin-top: -2em;
+    margin-bottom: 8em;
+}
+
+.about h1 {
+    letter-spacing: -1.1px;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 3em;
+}
+
+.myself {
+    font-size: 38.4px;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    letter-spacing: -1.1px;
+}
+
+.techP {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.tech {
+    letter-spacing: -1.1px;
+    font-size: 38.4px;
+}
+
+.awards {
+    min-height: 100vh;
+    height: max-content;
+}
+
+.awards h1 {
+    font-size: 64px;
+}
+
+.awards p {
+    padding: 8px 8px;
+}
+
+.awards-list {
+    border-top: 1px solid #000;
+}
+
+.award {
+    height: 80px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.award-wrapper {
+    position: relative;
+    height: 240px;
+    will-change: transform;
+    transform: translateY(-160px);
+}
+
+.award-name,
+.award-project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 9px 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+}
+
+.award-name {
+    background-color: #fff;
+    color: #000;
+}
+
+.award-project {
+    background-color: #000;
+    color: #fff;
+}
+
+.award-preview {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 30%;
+    height: 30%;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {}

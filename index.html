@@ -2,48 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>可汗 ℠ — Creative Dev × Designer × Director</title>
   </head>
   <body>
     <nav>
-      <div class="logo">
-        <a href="https://linkedin.com/company/hasnainkhagan" target="_blank"
-          >可汗 ℠</a
+      <div>
+        <span
+          ><a href="#hero">bio,</a> <a href="#work">Works,</a>
+          <a href="mailto:hasnainkhagan@gmail.com"> Contact</a></span
         >
       </div>
-      <div class="links">
-        <a href="#">About</a>
-        <a href="https://calendly.com/ahkan">Contact</a>
-        <div class="socials">
-          <a href="https://web.facebook.com/hasnainkhagan" target="_blank"
-            >FB</a
-          >
-          <a href="https://www.instagram.com/hasnainkhagan/" target="_blank"
-            >IG</a
-          >
-          <a href="https://x.com/hasnainkhagan" target="_blank">TW</a>
-        </div>
-      </div>
+      <a href="mailto:hasnainkhagan@gmail.com">start a project</a>
     </nav>
+    <section class="hero" id="hero">
+      <div class="left"></div>
+      <div class="right"><img src="./assets/me.png" alt="" /></div>
+    </section>
+    <section class="about">
+      <h1 class="intro">
+        hey. i'm Hasnaiin Khan - a 17 Years <br />
+        old Pak Creative Developer
+      </h1>
+      <p>myself</p>
+      <h1 class="myself">
+        Driven by the desire to create unique and memorable <br />
+        digital experiences, I’ve built a career in creative <br />
+        development—bringing pixels to life with style and <br />
+        purpose. Recognized for my sense of smooth animations <br />
+        and engaging interactions, I’ve had the chance to work <br />
+        with amazing companies worldwide. Now, as a founder <br />
+        of Ahkan, my OP creative design & development agency, <br />
+        I’m taking things to the next level. Check out my work and <br />
+        see where this journey has taken me.
+      </h1>
+      <p class="techP">technologies</p>
+      <h1 class="tech">
+        Javascript / Vue / Nuxt / ThreeJS / Gsap / Prismic / Vercel
+      </h1>
 
-    <footer>
-      <p>BY H45N41N</p>
-      <p>Buy Source Code For 25$</p>
-    </footer>
-
-    <div class="bg"></div>
-
-    <div class="container">
-      <div class="project-title-container">
-        <a href="#" id="project-link">
-          <div class="project-title-mask">
-            <p id="project-title">Title 1</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <script type="module" src="/script.js"></script>
+      <p class="techP">contact</p>
+      <h1 class="tech">hasnainkhagan@gmail.com</h1>
+    </section>
+    <section class="awards" id="work">
+      <p>recognition and awards</p>
+      <div class="awards-list"></div>
+    </section>
+    <div class="award-preview"></div>
+    <section class="footer">
+      <div></div>
+    </section>
+    <script src="./scripts/script.js" type="module"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </body>
 </html>
