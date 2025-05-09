@@ -1,6 +1,7 @@
 export const vertexShader = `
     uniform float uScrollIntensity;
-    varying vec2 vUv;   
+    varying vec2 vUv;
+    
     void main(){
         vUv = uv;
         vec3 pos = position;
@@ -21,8 +22,10 @@ export const fragmentShader = `
 
     void main() {
         float normalizedPosition = fract(uScrollPosition);
+
         vec2 currentUv = vec2(vUv.x, mod(vUv.y - normalizedPosition, 1.0));
         vec2 nextUv = vec2(vUv.x, mod (vUv.y + 1.0 - normalizedPosition, 1.0));
+        
         if (vUv.y < normalizedPosition) {
             gl_FragColor = texture2D(uNextTexture, nextUv);
         } else {
